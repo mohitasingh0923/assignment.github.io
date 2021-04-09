@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="abc.css">
+    <title>Document</title>
+    <script>
+        function validateform(){  
+            var name=document.mohita1.deg.value;       
+            if (name==null || name==""){  
+              alert("Degree can't be blank");  
+              return false;  
+            }
+            }  
+            </script>
+</head>
+<body>
+    <div class="container">
+        <form name="mohita1" action="3.html" onsubmit="return validateform()">
+            <center>
+                <h1>Education</h1>
+            </center>
+          <div class="row">
+            <div class="col1">
+                <label for="Deg">Course/Degree</label>
+            </div>
+            <div class="col2">
+                <input type="text" name="Deg" id="deg"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+                <label for="ins">Name of Institution</label>
+            </div>
+            <div class="col2">
+                <input type="text" name="ins" id="institution"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+                <label for="grade">Grade/Score</label>
+            </div>
+            <div class="col2">
+                <input type="text" name="grade" id="grade"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+                <label for="pass">Passing Year</label>
+            </div>
+            <div class="col2">
+                <input type="date" name="pass" id="passing"/>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" class="btn btn-primary" name="submit" value="Next"/>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
